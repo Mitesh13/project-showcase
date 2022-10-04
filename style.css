@@ -1,0 +1,40 @@
+/* body{
+    background:	#1B1b1b;
+    color: white;
+} */
+.video-wrapper
+{
+    
+    height: 100%;
+    line-height: 100%;
+}
+.video-wrapper::after
+{
+    content: "";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    line-height: normal;
+    position: absolute;
+    inset: 100% 0 0 0;
+    transition: .15s;
+    background-color: rgba(0,0,0,0.85);
+    border-radius: 20px;
+}
+.video-wrapper:hover::after
+{
+    content: "Take a look!";
+
+    top:  0;
+}
+.card-wrapper{
+    cursor: pointer;
+    transition: .23s;
+}
+.card-wrapper:hover
+{
+    transform: scale(1.05);
+}
