@@ -1,13 +1,13 @@
-/* body{
-    background:	#1B1b1b;
-    color: white;
-} */
-.video-wrapper
+body,html{
+   
+    perspective: 1000px;
+}
+/* .video-wrapper
 {
     
     height: 100%;
     line-height: 100%;
-}
+} */
 .video-wrapper::after
 {
     content: "";
@@ -24,17 +24,37 @@
     background-color: rgba(0,0,0,0.85);
     border-radius: 20px;
 }
-.video-wrapper:hover::after
+.card-wrapper:hover .video-wrapper::after
 {
-    content: "Take a look!";
-
+    content: "Take a look \2192";
     top:  0;
 }
 .card-wrapper{
+   
     cursor: pointer;
     transition: .23s;
+    width: 420px;
+    margin: 0 auto;
 }
 .card-wrapper:hover
 {
     transform: scale(1.05);
+}
+.card-wrapper a{
+    display: flex;
+    flex-direction: column;
+}
+.body{
+    padding: 15px;
+    border-radius: 20px;
+    flex: 1;
+    margin: 0 10px;
+    margin-top: -20px;
+    position: relative;
+    background-color:	#FFF8DC;
+    transform-style: preserve-3d;
+}
+a{
+    display: block;
+    height: 100%;
 }
